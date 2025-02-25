@@ -1,0 +1,49 @@
+table Metric
+	lineageTag: 20f322a7-9e1c-4903-9d4e-0bb8f4a1a816
+
+	column Metric
+		lineageTag: d2342dc9-c25e-4f8c-b23e-0fdbeedaeca2
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Metric Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Metric Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Metric Fields'
+		isHidden
+		lineageTag: 16969c35-db7a-4f59-852b-69ff94b2e3b2
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Metric Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Metric Order'
+		isHidden
+		formatString: 0
+		lineageTag: 87bd5021-fb9d-4807-b6d8-7b1da2d72e24
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Metric = calculated
+		mode: import
+		source =
+				{
+				    ("Total Flights", NAMEOF('flights'[Total Flights]), 0),
+				    ("Canceled Flights", NAMEOF('flights'[Canceled Flights]), 1),
+				    ("Delayed Flights", NAMEOF('flights'[Delayed Flights]), 2)
+				}
+
+	annotation PBI_Id = 574534be762247dd9710823f0a8baa9d
+

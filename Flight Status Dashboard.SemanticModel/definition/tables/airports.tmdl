@@ -1,0 +1,77 @@
+table airports
+	lineageTag: ee58e870-1375-4f33-9314-7e73934128a3
+
+	column IATA_CODE
+		dataType: string
+		lineageTag: 4d3d516b-8e3e-4b1b-a454-ec13ed3b2b7a
+		summarizeBy: none
+		sourceColumn: IATA_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIRPORT
+		dataType: string
+		lineageTag: 9a4ef6f7-f4ff-457a-8a6b-7665ea69702b
+		summarizeBy: none
+		sourceColumn: AIRPORT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CITY
+		dataType: string
+		lineageTag: d1fef14d-315f-4b77-afcf-c278a3a8247d
+		summarizeBy: none
+		sourceColumn: CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATE
+		dataType: string
+		lineageTag: 11d1e8c1-2654-47c8-b152-7da12ed70a86
+		summarizeBy: none
+		sourceColumn: STATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTRY
+		dataType: string
+		lineageTag: ce800099-ac92-451b-aa79-e23a75f753f8
+		summarizeBy: none
+		sourceColumn: COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column LATITUDE
+		dataType: double
+		lineageTag: 8f200deb-5a83-4860-922e-270537d5f707
+		summarizeBy: none
+		sourceColumn: LATITUDE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LONGITUDE
+		dataType: double
+		lineageTag: 38750c8b-55af-4e9c-8f7d-14a22ef1ca25
+		summarizeBy: none
+		sourceColumn: LONGITUDE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition airports = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Lenovo Yoga 460\Downloads\Airline+Flight+Delays\airports.csv"),[Delimiter=",", Columns=7, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"IATA_CODE", type text}, {"AIRPORT", type text}, {"CITY", type text}, {"STATE", type text}, {"COUNTRY", type text}, {"LATITUDE", type number}, {"LONGITUDE", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

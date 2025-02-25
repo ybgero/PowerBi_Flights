@@ -1,0 +1,312 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"ca29122f7250369c3524\",\"target\":\"d244313e3477e893ec55\",\"type\":3},{\"source\":\"a8f01990063e99cf4be5\",\"target\":\"d520fbf64cf6ceaf022a\",\"type\":3},{\"source\":\"a8f01990063e99cf4be5\",\"target\":\"ca29122f7250369c3524\",\"type\":1},{\"source\":\"a8f01990063e99cf4be5\",\"target\":\"5185f903000440990a28\",\"type\":1},{\"source\":\"ca29122f7250369c3524\",\"target\":\"a8f01990063e99cf4be5\",\"type\":1},{\"source\":\"5185f903000440990a28\",\"target\":\"ca29122f7250369c3524\",\"type\":1},{\"source\":\"5185f903000440990a28\",\"target\":\"a8f01990063e99cf4be5\",\"type\":1},{\"source\":\"ca29122f7250369c3524\",\"target\":\"5185f903000440990a28\",\"type\":1},{\"source\":\"a8f01990063e99cf4be5\",\"target\":\"7533e3997cebd8a1fcc4\",\"type\":1},{\"source\":\"ca29122f7250369c3524\",\"target\":\"7533e3997cebd8a1fcc4\",\"type\":1},{\"source\":\"5185f903000440990a28\",\"target\":\"7533e3997cebd8a1fcc4\",\"type\":3},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"51e8f1c902b6defc1e8d\",\"type\":3},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"5125f9cc35dd13811475\",\"type\":3},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"6aa538c784f0811d400c\",\"type\":3},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"a8f01990063e99cf4be5\",\"type\":1},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"ca29122f7250369c3524\",\"type\":1},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"5185f903000440990a28\",\"type\":1},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"b3b8d6324c7f40ce4834\",\"type\":3},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"29a61acaaf41850a3cd5\",\"type\":3},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"c1eb819ddc370287cc55\",\"type\":3},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"e966b65ea47c87c2582d\",\"type\":3},{\"source\":\"7533e3997cebd8a1fcc4\",\"target\":\"0657e4e32e40684ffb79\",\"type\":3},{\"source\":\"5185f903000440990a28\",\"target\":\"54cb3bddae6323874ccb\",\"type\":3},{\"source\":\"5185f903000440990a28\",\"target\":\"b4ba2370649afaa52430\",\"type\":3},{\"source\":\"5185f903000440990a28\",\"target\":\"273873cb3f275b278b35\",\"type\":3},{\"source\":\"a8f01990063e99cf4be5\",\"target\":\"f626ec65a35522fc18a0\",\"type\":1},{\"source\":\"ca29122f7250369c3524\",\"target\":\"f626ec65a35522fc18a0\",\"type\":1},{\"source\":\"f626ec65a35522fc18a0\",\"target\":\"ca29122f7250369c3524\",\"type\":1},{\"source\":\"f626ec65a35522fc18a0\",\"target\":\"a8f01990063e99cf4be5\",\"type\":1},{\"source\":\"f626ec65a35522fc18a0\",\"target\":\"5185f903000440990a28\",\"type\":1},{\"source\":\"5185f903000440990a28\",\"target\":\"b3b8d6324c7f40ce4834\",\"type\":3},{\"source\":\"5185f903000440990a28\",\"target\":\"29a61acaaf41850a3cd5\",\"type\":3},{\"source\":\"5185f903000440990a28\",\"target\":\"95d5856bec51799e81e8\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}}}]}}",
+      "displayName": "Flight Status",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9f1db3426f629cc9178d",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0657e4e32e40684ffb79\",\"layouts\":[{\"id\":0,\"position\":{\"x\":666.6645085621564,\"y\":69.75895551651111,\"z\":17000,\"width\":183.37078651685394,\"height\":91.08614232209739,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"flights.MONTH\",\"active\":true}],\"Y\":[{\"queryRef\":\"flights.Delayed Flights\"}],\"Tooltips\":[{\"queryRef\":\"flights.% Delayed\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"MONTH\"},\"Name\":\"flights.MONTH\",\"NativeReferenceName\":\"MONTH\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Delayed Flights\"},\"Name\":\"flights.Delayed Flights\",\"NativeReferenceName\":\"Delayed Flights\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Delayed\"},\"Name\":\"flights.% Delayed\",\"NativeReferenceName\":\"% Delayed\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Delayed Flights\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showOnValueAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20E2D7'\"}}}}}},\"selector\":{\"metadata\":\"flights.Total Flights\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F9FEA5'\"}}}}}},\"selector\":{\"metadata\":\"flights.Delayed Flights\"}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 91.09,
+          "width": 183.37,
+          "x": 666.66,
+          "y": 69.76,
+          "z": 17000.00
+        },
+        {
+          "config": "{\"name\":\"167d42168cc664ce3a6f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":446.14016399286805,\"y\":618.6728131944136,\"z\":6000,\"width\":804.1947565543071,\"height\":65.91760299625469,\"tabOrder\":26000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 65.92,
+          "width": 804.19,
+          "x": 446.14,
+          "y": 618.67,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"273873cb3f275b278b35\",\"layouts\":[{\"id\":0,\"position\":{\"x\":35.054021670770645,\"y\":652.2308656288706,\"z\":26000,\"width\":127.04119850187266,\"height\":28.764044943820224,\"tabOrder\":22000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"ON-TIME\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.76,
+          "width": 127.04,
+          "x": 35.05,
+          "y": 652.23,
+          "z": 26000.00
+        },
+        {
+          "config": "{\"name\":\"29a61acaaf41850a3cd5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":158.698216408717,\"y\":587.5117645051391,\"z\":23000,\"width\":136.62921348314606,\"height\":112.65917602996255,\"tabOrder\":19000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"flights.% Delayed\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Delayed\"},\"Name\":\"flights.% Delayed\",\"NativeReferenceName\":\"% Delayed\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Delayed\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F9FEA5'\"}}}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.66,
+          "width": 136.63,
+          "x": 158.70,
+          "y": 587.51,
+          "z": 23000.00
+        },
+        {
+          "config": "{\"name\":\"50669f822de4eec84908\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.664508562156417,\"y\":618.6728131944136,\"z\":7000,\"width\":384.7191011235955,\"height\":65.91760299625469,\"tabOrder\":18000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 65.92,
+          "width": 384.72,
+          "x": 26.66,
+          "y": 618.67,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"5125f9cc35dd13811475\",\"layouts\":[{\"id\":0,\"position\":{\"x\":458.76006157818466,\"y\":40.94768750349922,\"z\":18000,\"width\":239.70037453183522,\"height\":141.42322097378278,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"flights.Delayed Flights\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Delayed Flights\"},\"Name\":\"flights.Delayed Flights\",\"NativeReferenceName\":\"Delayed Flights\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Delayed Flights\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F9FEA5'\"}}}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 141.42,
+          "width": 239.70,
+          "x": 458.76,
+          "y": 40.95,
+          "z": 18000.00
+        },
+        {
+          "config": "{\"name\":\"5185f903000440990a28\",\"layouts\":[{\"id\":0,\"position\":{\"x\":871.6083287868755,\"y\":189.6091427824287,\"z\":11000,\"width\":378.72659176029964,\"height\":244.4943820224719,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"cancellation_codes.CANCELLATION_DESCRIPTION\",\"active\":true}],\"Y\":[{\"queryRef\":\"flights.Canceled Flights\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cancellation_codes\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CANCELLATION_DESCRIPTION\"},\"Name\":\"cancellation_codes.CANCELLATION_DESCRIPTION\",\"NativeReferenceName\":\"Description\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Canceled Flights\"},\"Name\":\"flights.Canceled Flights\",\"NativeReferenceName\":\"Canceled Flights\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Canceled Flights\"}}}]},\"columnProperties\":{\"cancellation_codes.CANCELLATION_DESCRIPTION\":{\"displayName\":\"Description\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20E2D7'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cancellation_codes\"}},\"Property\":\"CANCELLATION_DESCRIPTION\"}},\"Right\":{\"Literal\":{\"Value\":\"'Weather'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cancellation_codes\"}},\"Property\":\"CANCELLATION_DESCRIPTION\"}},\"Right\":{\"Literal\":{\"Value\":\"'Airline/Carrier'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cancellation_codes\"}},\"Property\":\"CANCELLATION_DESCRIPTION\"}},\"Right\":{\"Literal\":{\"Value\":\"'National Air System'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cancellation_codes\"}},\"Property\":\"CANCELLATION_DESCRIPTION\"}},\"Right\":{\"Literal\":{\"Value\":\"'Security'\"}}}}}]}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter1303672d945f7d13c7d5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"cancellation_codes\"}},\"Property\":\"CANCELLATION_DESCRIPTION\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"cancellation_codes\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CANCELLATION_DESCRIPTION\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}],[{\"Literal\":{\"Value\":\"'Security'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 244.49,
+          "width": 378.73,
+          "x": 871.61,
+          "y": 189.61,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"51e8f1c902b6defc1e8d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":869.1179749798744,\"y\":41.18559112451519,\"z\":21000,\"width\":239.70037453183522,\"height\":141.42322097378278,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"flights.Canceled Flights\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Canceled Flights\"},\"Name\":\"flights.Canceled Flights\",\"NativeReferenceName\":\"Canceled Flights\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Canceled Flights\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20E2D7'\"}}}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 141.42,
+          "width": 239.70,
+          "x": 869.12,
+          "y": 41.19,
+          "z": 21000.00
+        },
+        {
+          "config": "{\"name\":\"54cb3bddae6323874ccb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":268.9603735842031,\"y\":652.2308656288706,\"z\":28000,\"width\":139.02621722846442,\"height\":28.764044943820224,\"tabOrder\":24000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"CANCELED\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.76,
+          "width": 139.03,
+          "x": 268.96,
+          "y": 652.23,
+          "z": 28000.00
+        },
+        {
+          "config": "{\"name\":\"6aa538c784f0811d400c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.74873234636302,\"y\":41.18559112451519,\"z\":15000,\"width\":239.70037453183522,\"height\":141.42322097378278,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"flights.Total Flights\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Flights\"},\"Name\":\"flights.Total Flights\",\"NativeReferenceName\":\"Total Flights\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Flights\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 141.42,
+          "width": 239.70,
+          "x": 29.75,
+          "y": 41.19,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"7533e3997cebd8a1fcc4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":458.1251827194598,\"y\":594.7027757412301,\"z\":22000,\"width\":781.4232209737828,\"height\":105.46816479400749,\"tabOrder\":17000}}],\"singleVisual\":{\"visualType\":\"hundredPercentStackedBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"flights.Total Flights\"}],\"Series\":[{\"queryRef\":\"flights.STATUS\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Flights\"},\"Name\":\"flights.Total Flights\",\"NativeReferenceName\":\"Total Flights\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"STATUS\"},\"Name\":\"flights.STATUS\",\"NativeReferenceName\":\"STATUS\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Flights\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20E2D7'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"flights\"}},\"Property\":\"STATUS\"}},\"Right\":{\"Literal\":{\"Value\":\"'Canceled'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#F9FEA5'\"}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"flights\"}},\"Property\":\"STATUS\"}},\"Right\":{\"Literal\":{\"Value\":\"'Delayed'\"}}}}}]}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"borderColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"flights\"}},\"Property\":\"STATUS\"}},\"Right\":{\"Literal\":{\"Value\":\"'On-Time'\"}}}}}]}},{\"properties\":{\"borderShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"borderColorMatchFill\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"borderSize\":{\"expr\":{\"Literal\":{\"Value\":\"7D\"}}}}}],\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"layout\":[{\"properties\":{\"seriesOrderSorted\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"stackedGapSize\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"seriesOrderReversed\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"innerPadding\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"padding\":[{\"properties\":{\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 105.47,
+          "width": 781.42,
+          "x": 458.13,
+          "y": 594.70,
+          "z": 22000.00
+        },
+        {
+          "config": "{\"name\":\"75f966ae823c18fb5ae5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":865.6158194235796,\"y\":30.20839371875829,\"z\":4000,\"width\":384.7191011235955,\"height\":38.352059925093634,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"CANCELED FLIGHTS\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#333333\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 38.35,
+          "width": 384.72,
+          "x": 865.62,
+          "y": 30.21,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"7a6da2ec4814a8d59f3b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":446.6102318733898,\"y\":62.18623481781377,\"z\":1000,\"width\":384.423997055576,\"height\":99.49797570850203,\"tabOrder\":28000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#f9fea5'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 99.50,
+          "width": 384.42,
+          "x": 446.61,
+          "y": 62.19,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"92594828f104c9548f1b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":865.9543888148697,\"y\":63.75015091817308,\"z\":5000,\"width\":383.77456851003876,\"height\":99.55054596688974,\"tabOrder\":27000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20e2d7'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 99.55,
+          "width": 383.77,
+          "x": 865.95,
+          "y": 63.75,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"952ce412e8ba2fd99b3c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":446.6102318733898,\"y\":30.527788001472214,\"z\":2000,\"width\":384.423997055576,\"height\":37.31174089068826,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"DELAYED FLIGHTS\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#333333\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.31,
+          "width": 384.42,
+          "x": 446.61,
+          "y": 30.53,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"95d5856bec51799e81e8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":34.09342514286672,\"y\":587.4754671821108,\"z\":25000,\"width\":136.62921348314606,\"height\":112.65917602996255,\"tabOrder\":21000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"flights.% On-Time\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% On-Time\"},\"Name\":\"flights.% On-Time\",\"NativeReferenceName\":\"% On-Time\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% On-Time\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.66,
+          "width": 136.63,
+          "x": 34.09,
+          "y": 587.48,
+          "z": 25000.00
+        },
+        {
+          "config": "{\"name\":\"a5f8dd80607a21953f09\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.664508562156417,\"y\":587.511764505275,\"z\":30000,\"width\":383.52059925093636,\"height\":38.352059925093634,\"tabOrder\":30000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"FLIGHT STATUS\",\"textStyle\":{\"fontSize\":\"11pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 38.35,
+          "width": 383.52,
+          "x": 26.66,
+          "y": 587.51,
+          "z": 30000.00
+        },
+        {
+          "config": "{\"name\":\"a8f01990063e99cf4be5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":36.252523543429824,\"y\":180.02112780115527,\"z\":9000,\"width\":384.7191011235955,\"height\":388.314606741573,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"airports.CITY\",\"active\":true}],\"Y\":[{\"queryRef\":\"flights.Total Flights\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"airports\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"CITY\"},\"Name\":\"airports.CITY\",\"NativeReferenceName\":\"CITY\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Flights\"},\"Name\":\"flights.Total Flights\",\"NativeReferenceName\":\"Total Flights\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Flights\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.1}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 388.31,
+          "width": 384.72,
+          "x": 36.25,
+          "y": 180.02,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"ab260dc2a2fcebbc0728\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.267175007191,\"y\":30.566635595876495,\"z\":3000,\"width\":385.2173300457908,\"height\":37.51179992955266,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"TOTAL FLIGHTS\",\"textStyle\":{\"fontSize\":\"11pt\",\"color\":\"#333333\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 37.51,
+          "width": 385.22,
+          "x": 26.27,
+          "y": 30.57,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"b3b8d6324c7f40ce4834\",\"layouts\":[{\"id\":0,\"position\":{\"x\":271.3573773295214,\"y\":587.511764505275,\"z\":24000,\"width\":136.62921348314606,\"height\":112.65917602996255,\"tabOrder\":20000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"flights.% Canceled\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Canceled\"},\"Name\":\"flights.% Canceled\",\"NativeReferenceName\":\"% Canceled\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Canceled\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"1L\"}}},\"preserveWhitespace\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20E2D7'\"}}}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 112.66,
+          "width": 136.63,
+          "x": 271.36,
+          "y": 587.51,
+          "z": 24000.00
+        },
+        {
+          "config": "{\"name\":\"b4ba2370649afaa52430\",\"layouts\":[{\"id\":0,\"position\":{\"x\":153.18600530937312,\"y\":652.2671629518989,\"z\":27000,\"width\":139.02621722846442,\"height\":28.764044943820224,\"tabOrder\":23000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"DELAYED\",\"textStyle\":{\"fontSize\":\"8pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.76,
+          "width": 139.03,
+          "x": 153.19,
+          "y": 652.27,
+          "z": 27000.00
+        },
+        {
+          "config": "{\"name\":\"b651877f56ef9bc95cbe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":866.0540400012453,\"y\":66.17840505459144,\"z\":19000,\"width\":384.7191011235955,\"height\":101.87265917602997,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 101.87,
+          "width": 384.72,
+          "x": 866.05,
+          "y": 66.18,
+          "z": 19000.00
+        },
+        {
+          "config": "{\"name\":\"c1eb819ddc370287cc55\",\"layouts\":[{\"id\":0,\"position\":{\"x\":249.58585687676313,\"y\":69.75895551651111,\"z\":12000,\"width\":178.57677902621722,\"height\":91.08614232209739,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"flights.MONTH\",\"active\":true}],\"Y\":[{\"queryRef\":\"flights.Total Flights\"}],\"Tooltips\":[{\"queryRef\":\"flights.% On-Time\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"MONTH\"},\"Name\":\"flights.MONTH\",\"NativeReferenceName\":\"MONTH\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Flights\"},\"Name\":\"flights.Total Flights\",\"NativeReferenceName\":\"Total Flights\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% On-Time\"},\"Name\":\"flights.% On-Time\",\"NativeReferenceName\":\"% On-Time\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Flights\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showOnValueAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}},\"selector\":{\"metadata\":\"flights.Total Flights\"}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 91.09,
+          "width": 178.58,
+          "x": 249.59,
+          "y": 69.76,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"ca29122f7250369c3524\",\"layouts\":[{\"id\":0,\"position\":{\"x\":449.7356696108456,\"y\":180.02112780115527,\"z\":10000,\"width\":379.9250936329588,\"height\":388.314606741573,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"airlines.AIRLINE\",\"active\":true}],\"Y\":[{\"queryRef\":\"flights.% Delayed\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"airlines\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"AIRLINE\"},\"Name\":\"airlines.AIRLINE\",\"NativeReferenceName\":\"AIRLINE\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Delayed\"},\"Name\":\"flights.% Delayed\",\"NativeReferenceName\":\"% Delayed\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Delayed\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.1}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#f9fea5'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 388.31,
+          "width": 379.93,
+          "x": 449.74,
+          "y": 180.02,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"d244313e3477e893ec55\",\"layouts\":[{\"id\":0,\"position\":{\"x\":834.454770734441,\"y\":40.99491057269088,\"z\":14000,\"width\":27.56554307116105,\"height\":553.7078651685393,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 553.71,
+          "width": 27.57,
+          "x": 834.45,
+          "y": 40.99,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"d520fbf64cf6ceaf022a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":414.9791153037295,\"y\":40.99491057269088,\"z\":13000,\"width\":26.367041198501873,\"height\":553.7078651685393,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 553.71,
+          "width": 26.37,
+          "x": 414.98,
+          "y": 40.99,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"e966b65ea47c87c2582d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1084.9416621202088,\"y\":69.75895551651111,\"z\":20000,\"width\":183.37078651685394,\"height\":91.08614232209739,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"flights.MONTH\",\"active\":true}],\"Y\":[{\"queryRef\":\"flights.Canceled Flights\"}],\"Tooltips\":[{\"queryRef\":\"flights.% Canceled\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"MONTH\"},\"Name\":\"flights.MONTH\",\"NativeReferenceName\":\"MONTH\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Canceled Flights\"},\"Name\":\"flights.Canceled Flights\",\"NativeReferenceName\":\"Canceled Flights\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Canceled\"},\"Name\":\"flights.% Canceled\",\"NativeReferenceName\":\"% Canceled\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Canceled Flights\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showOnValueAxis\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20E2D7'\"}}}}}},\"selector\":{\"metadata\":\"flights.Total Flights\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20E2D7'\"}}}}}},\"selector\":{\"metadata\":\"flights.Delayed Flights\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20E2D7'\"}}}}}},\"selector\":{\"metadata\":\"flights.Canceled Flights\"}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lineStyles\":[{\"properties\":{\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 91.09,
+          "width": 183.37,
+          "x": 1084.94,
+          "y": 69.76,
+          "z": 20000.00
+        },
+        {
+          "config": "{\"name\":\"effe73e8650b22d5f7a6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":445.97047092626127,\"y\":66.19647547995226,\"z\":16000,\"width\":384.7191011235955,\"height\":101.87265917602997,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 101.87,
+          "width": 384.72,
+          "x": 445.97,
+          "y": 66.20,
+          "z": 16000.00
+        },
+        {
+          "config": "{\"name\":\"f626ec65a35522fc18a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":869.5256166982922,\"y\":393.472485768501,\"z\":29000,\"width\":380.5186590765339,\"height\":194.30740037950665,\"tabOrder\":25000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"flights.DAY_OF_WEEK\",\"active\":true}],\"Y\":[{\"queryRef\":\"flights.% Canceled\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"flights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"DAY_OF_WEEK\"},\"Name\":\"flights.DAY_OF_WEEK\",\"NativeReferenceName\":\"DAY_OF_WEEK\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Canceled\"},\"Name\":\"flights.% Canceled\",\"NativeReferenceName\":\"% Canceled\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"% Canceled\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.1}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Scalar'\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideEnd'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#20e2d7'\"}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"labelDensity\":{\"expr\":{\"Literal\":{\"Value\":\"50L\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"optimizeLabelDisplay\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 194.31,
+          "width": 380.52,
+          "x": 869.53,
+          "y": 393.47,
+          "z": 29000.00
+        },
+        {
+          "config": "{\"name\":\"f98f41bd67f85629fb6d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.664508562156417,\"y\":62.56794428055605,\"z\":0,\"width\":384.7191011235955,\"height\":99.47565543071161,\"tabOrder\":29000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#e6e6e6'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 99.48,
+          "width": 384.72,
+          "x": 26.66,
+          "y": 62.57,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"fcb42bbbfdf6208b0550\",\"layouts\":[{\"id\":0,\"position\":{\"x\":26.466007168137278,\"y\":66.16344997814632,\"z\":8000,\"width\":384.7191011235955,\"height\":101.87265917602997,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.2}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 101.87,
+          "width": 384.72,
+          "x": 26.47,
+          "y": 66.16,
+          "z": 8000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

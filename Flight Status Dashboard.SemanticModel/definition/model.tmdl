@@ -1,0 +1,24 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.140.1078.0 (25.02)+2cce24fb16e8b71ba835921d23e7ffc1fab909df
+
+annotation PBI_QueryOrder = ["airlines","cancellation_codes","flights","airports"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table airlines
+ref table cancellation_codes
+ref table flights
+ref table airports
+ref table Metric
+
+ref cultureInfo en-US
+

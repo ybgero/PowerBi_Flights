@@ -1,0 +1,34 @@
+table airlines
+	lineageTag: fb904796-898d-40b0-8ba9-278f20e863ce
+
+	column IATA_CODE
+		dataType: string
+		lineageTag: b49aa169-7051-4f96-87d1-9afcfb890546
+		summarizeBy: none
+		sourceColumn: IATA_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column AIRLINE
+		dataType: string
+		lineageTag: 29e5ef00-afcc-4e1f-8e05-7f71829e3b23
+		summarizeBy: none
+		sourceColumn: AIRLINE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition airlines = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Lenovo Yoga 460\Downloads\Airline+Flight+Delays\airlines.csv"),[Delimiter=",", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"IATA_CODE", type text}, {"AIRLINE", type text}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

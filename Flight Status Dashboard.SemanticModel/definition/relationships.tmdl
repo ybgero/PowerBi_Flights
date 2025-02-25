@@ -1,0 +1,12 @@
+relationship 7943e1a9-e320-adfa-134d-5d97794dadcc
+	fromColumn: flights.AIRLINE
+	toColumn: airlines.IATA_CODE
+
+relationship c3d9e2fb-1a44-234f-fdd5-4c21a24f9870
+	fromColumn: flights.CANCELLATION_REASON
+	toColumn: cancellation_codes.CANCELLATION_REASON
+
+relationship bc9b384e-753e-0c1e-b26d-15a9f10c1c36
+	fromColumn: flights.ORIGIN_AIRPORT
+	toColumn: airports.IATA_CODE
+

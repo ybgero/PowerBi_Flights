@@ -1,0 +1,86 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "airlines",
+          "nodeLineageTag": "fb904796-898d-40b0-8ba9-278f20e863ce",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 542,
+            "y": 318
+          },
+          "nodeIndex": "cancellation_codes",
+          "nodeLineageTag": "ddf09a8f-fdf1-4b66-bce1-3726a1578ac4",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 188,
+            "y": 180
+          },
+          "nodeIndex": "flights",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 494,
+            "y": 0
+          },
+          "nodeIndex": "airports",
+          "nodeLineageTag": "ee58e870-1375-4f33-9314-7e73934128a3",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 826,
+            "y": 164
+          },
+          "nodeIndex": "Metric",
+          "nodeLineageTag": "20f322a7-9e1c-4903-9d4e-0bb8f4a1a816",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

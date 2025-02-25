@@ -1,0 +1,34 @@
+table cancellation_codes
+	lineageTag: ddf09a8f-fdf1-4b66-bce1-3726a1578ac4
+
+	column CANCELLATION_REASON
+		dataType: string
+		lineageTag: 61c1458d-98f4-4811-8e01-aa2f4e18c573
+		summarizeBy: none
+		sourceColumn: CANCELLATION_REASON
+
+		annotation SummarizationSetBy = Automatic
+
+	column CANCELLATION_DESCRIPTION
+		dataType: string
+		lineageTag: 5144c7ac-90ab-4533-a3a5-94958bc31f0a
+		summarizeBy: none
+		sourceColumn: CANCELLATION_DESCRIPTION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition cancellation_codes = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Lenovo Yoga 460\Downloads\Airline+Flight+Delays\cancellation_codes.csv"),[Delimiter=",", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"CANCELLATION_REASON", type text}, {"CANCELLATION_DESCRIPTION", type text}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
